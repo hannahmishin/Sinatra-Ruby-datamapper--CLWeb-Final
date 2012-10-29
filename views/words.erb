@@ -1,0 +1,22 @@
+
+<html>
+<body>
+<body bgcolor="#999999">  
+<font color="#333333 hex_number">
+<h2>Here are the stories related to your search:</h2>
+ 
+ <% for p in @posts %>
+ <div align="center">
+  <em> <h3> <%= p.prompt %> </h3></em>
+  </div>
+   <b> <p> <%= p.title %> </p></b>
+    <p> <%= p.body %> </p>
+ <% end %>
+ <h3><a href="http://itp.nyu.edu/~hm825/sinatra/week2/blog">Back to the collection...</a></h3>
+</p>
+</font>
+</body>
+</html>
+
+
+

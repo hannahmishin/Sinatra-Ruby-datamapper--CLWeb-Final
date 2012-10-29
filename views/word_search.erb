@@ -1,0 +1,16 @@
+
+
+<!DOCTYPE html>
+
+    <html> 
+    <body bgcolor="#CCCC99">
+    <form action="http://itp.nyu.edu/~hm825/sinatra/week2/words" method="GET">
+    <h2><label>Search for stories by Word:</label> <input type="text" name="search" /></h2>
+    <p><input type="submit" value="Go""onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" /></p>
+    </form>
+    <% for thisWord in @words %>
+    <h3><%= thisWord.prompt %></h3>
+    <% end %>
+     </p>
+    </body>
+    </html> 

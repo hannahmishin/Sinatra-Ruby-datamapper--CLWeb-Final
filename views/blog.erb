@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    
+  <html>
+    <body bgcolor="#999999">    
+    <h5>Go <a href="http://itp.nyu.edu/~hm825/sinatra/week2/words/search"> here</a> a link to search find stories related by subject.</h5>    
+    
+    <% for thisPost in @posts %>
+
+    <h2><%= thisPost.title %></h2>   
+    <p><%= thisPost.body %></p>
+  <font size="1"> <a href="http://itp.nyu.edu/~hm825/sinatra/week2/blog/<%=thisPost.id%>">link for story here</a></font>
+    
+    <% end %>
+    
+ </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<h2>Please contribute a memory or story that the word <font size= "10" color="#663366"><%=@random.prompt%></font> conjures for you...</h2>
+
+
+<body bgcolor="#CCCC99">
+<form action="http://itp.nyu.edu/~hm825/sinatra/week2/blog/save" method="POST">
+  <div align="center">
+  <p1><font color="#333333 hex_number">Please contribute a fable, a memory, a dream about the word <b><%=@random.prompt%></b>, or even how you define it, think about it or your take on it in the text below.</font> </p1>  
+  </div>
+  <p><font color="#333333 hex_number">Title:  <input type="text" name="title" value="Title"onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" /></font></p>
+  <p><textarea  ROWS=16 COLS=150 name="body" value="Write your contribution here" ></textarea></p>
+  <p5><input type ="hidden" name="prompt" value = "<%=@random.prompt%>"/> </p5>
+  <p><input type="submit" value="Save your story" /></p>
+</form>
+</body>
+</html>

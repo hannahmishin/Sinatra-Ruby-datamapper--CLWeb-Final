@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+
+<body bgcolor="#CCCC99">
+    <font color="#333333 hex_number">
+        <div align="center">
+    <b>
+    <h2><%= @message %></h2>
+    <p> Thank you for your contribution.</p> 
+<h3><a href="http://itp.nyu.edu/~hm825/sinatra/week2/blog">Go read others'stories...</a></h3>
+</b>
+    </div>
+<p>Your word was <p5><b> <%= @like.prompt %></b></p5>
+
+<p>Here is the story from the last person who wrote about this subject:</p>
+
+<p><h3><%= @like.title %></h3></p>
+
+<p><%= @like.body %></p>
+    </font>
+
+</body>
+    </html>
